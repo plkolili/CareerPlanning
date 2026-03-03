@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Julia: 当前文件",
+            "type": "julia",
+            "request": "launch",
+            "program": "${file}",
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}",
+            "juliaEnv": "${workspaceFolder}/MathDemo"
+        },
+        {
+            "name": "Julia: 运行脚本",
+            "type": "julia",
+            "request": "launch",
+            "program": "${workspaceFolder}/MathDemo/scripts/demo.jl",
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}",
+            "juliaEnv": "${workspaceFolder}/MathDemo"
+        }
+    ]
+}

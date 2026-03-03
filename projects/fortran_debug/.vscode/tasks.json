@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Fortran: 构建单文件",
+            "type": "shell",
+            "command": "gfortran",
+            "args": [
+                "-g",
+                "-O0",
+                "-fcheck=all",
+                "-fbacktrace",
+                "-ffpe-trap=invalid,zero,overflow",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "使用 gfortran 构建单个 Fortran 文件"
+        },
+        {
+            "label": "Fortran: 构建多文件项目",
+            "type": "shell",
+            "command": "make",
+            "args": [],
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "使用 Makefile 构建多文件 Fortran 项目"
+        },
+        {
+            "label": "Fortran: 清理",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"],
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "清理编译产物"
+        }
+    ]
+}
