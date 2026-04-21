@@ -1,3 +1,7 @@
+---
+words:
+  2026-03-03: 5441
+---
 # VSCode + WSL 调试完全指南 - 科学计算篇 🐧🔬
 
 > 专为科学计算和工程研发人员打造的调试教程，涵盖 Python、C++、Fortran、Julia、CUDA 在 WSL + VSCode 环境下的完整调试配置。
